@@ -1,4 +1,4 @@
--- Data set used in this work: https://github.com/ildeniz/sql_projects/blob/master/data/Nashville%20Housing%20Data%20for%20Data%20Cleaning.csv
+-- Data set used in this work: https://github.com/ildeniz/sql_projects/blob/master/data/Nashville_Housing_Data_for_Data_Cleaning.csv
 
 # Create database
 CREATE SCHEMA `nashville_housing` ;
@@ -34,7 +34,7 @@ HalfBath INT #,
 -- DROP TABLE nashville_housing.nashville;
 
 # Load data from CSV file and bulk insert it to the table created above
-LOAD DATA LOCAL INFILE 'C:/Storage/SQL Projects/Nashville Housing Data for Data Cleaning.csv'
+LOAD DATA LOCAL INFILE 'C:/ ... /Nashville_Housing_Data_for_Data_Cleaning.csv'
 INTO TABLE nashville_housing.nashville FIELDS TERMINATED BY ';'
 OPTIONALLY ENCLOSED BY '"' 
 LINES TERMINATED BY '\n'
